@@ -1,0 +1,140 @@
+:root {
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--dark-cyan: hsl(179, 100%, 13%);
+
+	--white-text: hsla(0, 0%, 100%, 0.75);
+	--white: hsl(0, 0%, 95%);
+
+	--lexend-deca: 'Lexend Deca', sans-serif;
+	--big-shoulders: 'Big Shoulders Display', cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background-color: var(--white-text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: var(--lexend-deca);
+	color: var(--white-text);
+	height: 1500px;
+}
+
+h1 {
+	color: var(--white);
+	font-family: var(--big-shoulders);
+}
+
+.main {
+	width: 90%;
+	margin: auto 0;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.main__section {
+	width: 100%;
+	padding: 50px;
+}
+
+.section__title {
+	font-size: 3rem;
+	margin: 20px 0;
+}
+
+.section__text {
+	line-height: 25px;
+	margin: 0 0 20px 0;
+}
+
+.orange {
+	background-color: var(--orange);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.t-orange {
+	color: var(--orange);
+}
+
+.cyan {
+	background-color: var(--cyan);
+}
+
+.t-cyan {
+	color: var(--cyan);
+}
+
+.dark-cyan {
+	background-color: var(--dark-cyan);
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.t-dark-cyan {
+	color: var(--dark-cyan);
+}
+
+.button {
+	background-color: var(--white);
+	padding: 15px;
+	border-radius: 50px;
+	border: none;
+	margin: 10px 0;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 1rem;
+	width: 150px;
+}
+
+@media (min-width: 900px) {
+	body {
+		height: auto;
+	}
+
+	.main {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.main__section {
+		width: 33.33%;
+	}
+
+	.section__text {
+		margin: 0 0 50px 0;
+	}
+
+	.orange {
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	.dark-cyan {
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
