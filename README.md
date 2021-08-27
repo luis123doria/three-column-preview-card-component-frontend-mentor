@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repository](https://github.com/luis123doria/three-column-preview-card-component-frontend-mentor)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [GitHub Pages](https://luis123doria.github.io/three-column-preview-card-component-frontend-mentor/)
 
 ## My process
 
